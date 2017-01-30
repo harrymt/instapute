@@ -1,0 +1,17 @@
+service: download-photos
+runtime: python27
+threadsafe: true
+
+runtime_config:
+  python_version: 3
+
+handlers:
+- url: /.*
+  script: download-photos.app
+- url: /process-work
+  script: process-work.app
+
+
+libraries:
+- name: PIL
+  version: latest

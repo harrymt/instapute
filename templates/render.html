@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Render{% endblock %}
+{% block content %}
+    
+    <h1>Manipulating 4 photos...</h1>
+    <p>{{username.decode('utf-8')|e if username != None else 'username not found'}}</p>
+    
+    <pre class="debug">id: {{job_id|e if job_id != None else 'job id not found'}}</pre>
+    <pre class="debug">Message: {{message.decode('utf-8')|e if message != None else 'message not found'}}</pre>
+
+    <div>
+      {% if completed %}
+        <img src="data:image/png;base64,{{final_image}}"/>
+      {% else %}
+        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+      {% endif %}
+    </div>
+    
+    <input style="visibility: hidden;" type="text" name="completed" id="completed" value="{{ completed }}"/>
+
+    <div>
+      <a href="/">Choose a different username</a>
+    </div>
+{% endblock %}

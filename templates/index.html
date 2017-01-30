@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+    <h1>Photo Manipulation in the Cloud</h1>
+    <p>
+    	Welcome to Instapute, resize and combine your most recent
+    	<select name="num_of_photos">
+		  <option value="4">4</option>
+		  <option value="16" disabled>16</option>
+		  <option value="32" disabled>32</option>
+		  <option value="64" disabled>64</option>
+		  <option value="128" disabled>128</option>
+		</select>
+ 		Instagram photos.
+ 	</p>
+		
+	<form action="/start_job" method="post">
+        <div><input name="username" type="text" value="universityofbristol"/></div>
+        <div><input type="submit" value="Process Photos"></div>
+  </form>
+{% endblock %}
