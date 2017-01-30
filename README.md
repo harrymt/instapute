@@ -1,6 +1,6 @@
 ## Instapute
 
-A photo manipulation application named Instapute, hosted on Google App Engine. The application can perform various image manipulation tasks on a large number of images. The use case design demonstrates these tasks by resizing 4 images and composites them together to create a single image. This application can be run online at https://front-end-dot-ccinstapute.appspot.com
+A photo manipulation application named Instapute, hosted on Google App Engine. The application can perform various image manipulation tasks on a large number of images. The use case design demonstrates these tasks by resizing 4 images and composites them together to create a single image. This application used to run online [here](https://front-end-dot-ccinstapute.appspot.com), but it has been taken down for now. 
 
 ![Screenshot of app](screenshot.png)
 
