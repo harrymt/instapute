@@ -2,7 +2,7 @@ from google.appengine.ext import ndb
 
 class Job(ndb.Model):
     """Model for representing a job in the DB."""
-    job_id = ndb.IntegerProperty() # TODO delete this????
+    job_id = ndb.IntegerProperty() # TODO Possibly could remove this
     is_completed = ndb.BooleanProperty()
     username = ndb.StringProperty()
     num_of_photos = ndb.IntegerProperty() # multiples of 8, 16
